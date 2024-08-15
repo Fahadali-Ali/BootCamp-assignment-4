@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Click Example</title>
+</head>
+<body>
+  <p id="paragraph">Initial text</p>
+  <button id="button">Click me!</button>
+
+  <script>
+    // Select the paragraph element
+    const paragraph = document.getElementById('paragraph');
+
+    // Select the button element
+    const button = document.getElementById('button');
+
+    // Add an event listener to the button
+    button.addEventListener('click', () => {
+      // Change the text of the paragraph when the button is clicked
+      paragraph.textContent = 'New text!';
+    });
+  </script>
+</body>
+</html>
